@@ -1,0 +1,32 @@
+{
+  "packageId": "com.code2video.app",
+  "host": "emphasis-virginia-halifax-conferences.trycloudflare.com",
+  "name": "code2video",
+  "launcherName": "code2video",
+  "display": "standalone",
+  "themeColor": "#0A0E27",
+  "navigationColor": "#0A0E27",
+  "navigationColorDark": "#0A0E27",
+  "navigationDividerColor": "#0A0E27",
+  "navigationDividerColorDark": "#0A0E27",
+  "backgroundColor": "#0A0E27",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://emphasis-virginia-halifax-conferences.trycloudflare.com/icons/icon-512.png",
+  "maskableIconUrl": "https://emphasis-virginia-halifax-conferences.trycloudflare.com/icons/icon-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://emphasis-virginia-halifax-conferences.trycloudflare.com/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  }
+}

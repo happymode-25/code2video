@@ -1,0 +1,178 @@
+{
+  "name": "Two Teachers",
+  "theme": { "name": "midnight" },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "gap": 0.45,
+  "voice": "lessac",
+  "cast": [
+    {
+      "id": "maya",
+      "name": "Maya",
+      "skin": "#C98A5E",
+      "hair": "#1F2A38",
+      "shirt": "#1ABC9C",
+      "hairStyle": "bun",
+      "accessory": "glasses",
+      "build": "slim"
+    },
+    {
+      "id": "theo",
+      "name": "Theo",
+      "skin": "#8C5A3C",
+      "hair": "#12151C",
+      "shirt": "#E67E22",
+      "hairStyle": "curly",
+      "accessory": "headphones",
+      "build": "broad"
+    }
+  ],
+  "captions": { "enabled": true, "maxWords": 6, "maxSeconds": 3.2, "fontSize": 40 },
+  "scenes": [
+    {
+      "id": 1,
+      "slug": "scene-01",
+      "title": "Two Teachers",
+      "voice": "lessac",
+      "mode": "dialogue",
+      "speaker": "maya",
+      "listener": "theo",
+      "narration": "Welcome. Today two teachers walk you through the whole idea, one step at a time, so nothing gets left behind.",
+      "blocks": [
+        { "type": "chapter", "number": "Chapter 1", "title": "Two Teachers", "sub": "A conversation, not a lecture" }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "scene-02",
+      "title": "The Big Number",
+      "voice": "lessac",
+      "narration": "First, the scale of it. Four numbers tell the whole story before we say another word about the method.",
+      "blocks": [
+        { "type": "title", "text": "The Big Number", "sub": "four figures worth remembering" },
+        {
+          "type": "stat",
+          "heading": "By the numbers",
+          "items": [
+            { "label": "Countries", "value": "142", "hint": "and growing" },
+            { "label": "Years", "value": "30", "hint": "of steady work" },
+            { "label": "People", "value": "1.2M", "hint": "reached so far" }
+          ],
+          "note": "Every one of these numbers has a story behind it."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "scene-03",
+      "title": "How It Flows",
+      "voice": "amy",
+      "narration": "The method is a pipeline. Notes go in, a model writes the words, a voice speaks them, and a renderer draws the frames. Each stage hands its work to the next.",
+      "blocks": [
+        {
+          "type": "diagram",
+          "heading": "The pipeline",
+          "nodes": [
+            { "id": "notes", "label": "Notes", "color": "#3498DB" },
+            { "id": "model", "label": "Model", "color": "#9B59B6" },
+            { "id": "voice", "label": "Voice", "color": "#1ABC9C" },
+            { "id": "video", "label": "Video", "color": "#E67E22" }
+          ],
+          "edges": [
+            { "from": "notes", "to": "model" },
+            { "from": "model", "to": "voice" },
+            { "from": "voice", "to": "video" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "scene-04",
+      "title": "A Warning",
+      "voice": "alan",
+      "narration": "One warning before we go further. The model is only as good as the notes you give it, and a vague brief produces a vague script every time.",
+      "blocks": [
+        { "type": "callout", "kind": "warning", "title": "Watch out", "text": "A vague brief produces a vague script. Give the model the real details." }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "scene-05",
+      "title": "The Timeline",
+      "voice": "lessac",
+      "narration": "How did we get here? The road runs from typed commands, to scripts, to a model that writes the script, and finally to a machine that draws it.",
+      "blocks": [
+        {
+          "type": "timeline",
+          "heading": "How we got here",
+          "entries": [
+            { "when": "1990", "what": "Typed commands", "note": "Everything by hand" },
+            { "when": "2005", "what": "Scripts", "note": "Repeatable, still manual" },
+            { "when": "2018", "what": "Generators", "note": "The tool drafts for you" },
+            { "when": "2026", "what": "Full pipeline", "note": "Notes to video" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "scene-06",
+      "title": "The Comparison",
+      "voice": "amy",
+      "narration": "So what actually changed? Compare the old way with the new one. The old way is slow and steady; the new way is fast, but it still needs your judgment at the end.",
+      "blocks": [
+        {
+          "type": "table",
+          "heading": "Then and now",
+          "data": {
+            "columns": ["Step", "Before", "After"],
+            "rows": [
+              ["Plan", "You decide", "The model suggests"],
+              ["Write", "You draft", "The model drafts"],
+              ["Review", "You reread", "You still reread"]
+            ]
+          },
+          "highlight": 2
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "scene-07",
+      "title": "One Quote",
+      "voice": "alan",
+      "mode": "character",
+      "speaker": "theo",
+      "narration": "A colleague put it well. The point of a tool like this is not to replace the teacher. It is to give the teacher a free afternoon.",
+      "blocks": [
+        { "type": "quote", "text": "It is not here to replace the teacher. It is here to give the teacher a free afternoon.", "who": "Theo", "source": "on automated lessons" }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "scene-08",
+      "title": "The Key Points",
+      "voice": "lessac",
+      "narration": "If you remember nothing else, remember these. Write a clear brief. Check the draft. Pick a voice that suits the room. Then let the machine draw the frames.",
+      "blocks": [
+        {
+          "type": "keypoints",
+          "heading": "Remember this",
+          "items": ["Write a clear brief", "Check every draft", "Pick the right voice", "Let the machine draw"]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "scene-09",
+      "title": "Goodbye",
+      "voice": "amy",
+      "narration": "That is the whole pipeline, end to end. Bring your own notes and try it yourself, and remember that the last step was always yours.",
+      "blocks": [
+        { "type": "outro", "text": "Bring your own notes", "sub": "and check the draft" }
+      ]
+    }
+  ]
+}

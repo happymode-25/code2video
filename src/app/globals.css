@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #080a14;
+  --panel: #0e1220;
+  --panel-2: #141a2c;
+  --line: #232b45;
+  --ink: #e8eefc;
+  --muted: #8b9ac0;
+  --accent: #4fd1ff;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-panel2: var(--panel-2);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "Cascadia Code", "Consolas", ui-monospace, monospace;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  overscroll-behavior: none;
+}
+
+/* thin dark scrollbars everywhere */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2b3556 transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #2b3556;
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #3b4875;
+}
+
+textarea.editor {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.65;
+  tab-size: 2;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+.dot-live {
+  animation: pulse-dot 1.1s ease-in-out infinite;
+}

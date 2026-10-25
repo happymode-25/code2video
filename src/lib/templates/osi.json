@@ -1,0 +1,492 @@
+{
+  "name": "The OSI Model",
+  "theme": {
+    "name": "midnight"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "gap": 0.45,
+  "voice": "",
+  "captions": {
+    "enabled": true,
+    "maxWords": 6,
+    "maxSeconds": 3.2,
+    "fontSize": 40
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "slug": "hook",
+      "title": "Cold Open",
+      "narration": "Every second, millions of invisible messages cross the world. But how does data actually travel? The answer lives in seven layers.",
+      "accent": "#4FD1FF",
+      "blocks": [
+        {
+          "type": "title",
+          "text": "How does data travel?",
+          "sub": "Millions of messages, every second"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Invisible messages cross the world",
+            "Seven layers make it work",
+            "We will walk all seven"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "whats-osi",
+      "title": "What is OSI",
+      "narration": "OSI stands for Open Systems Interconnection. It is a conceptual framework created by ISO in nineteen eighty four. Think of it as the blueprint every network follows. It breaks communication down into seven logical layers, each with a specific job.",
+      "accent": "#4FD1FF",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "label": "OSI",
+              "hint": "Open Systems Interconnection"
+            },
+            {
+              "label": "ISO",
+              "hint": "who defined it"
+            },
+            {
+              "label": "1984",
+              "hint": "the year"
+            }
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "A conceptual framework, not a protocol",
+            "Seven logical layers",
+            "Each layer has one job"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "big-picture",
+      "title": "The Big Picture",
+      "narration": "Think of it like sending a letter. Each layer does one specific job, then passes the result down to the next one. We will go from the top, layer seven, down to layer one. Ready? Let us dive into layer seven.",
+      "accent": "#4FD1FF",
+      "blocks": [
+        {
+          "type": "title",
+          "text": "Like sending a letter",
+          "sub": "Each layer does one job, then hands it down"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Write",
+            "Seal",
+            "Address",
+            "Post",
+            "Deliver"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "layer7-application",
+      "title": "Layer 7 · Application",
+      "narration": "Layer seven, Application. This is where you interact. Browsers, email clients, games, apps, they all live here. Common protocols: HTTP for websites, FTP for files, SMTP for email, and DNS for names. It is the human friendly face of the network.",
+      "accent": "#9B59B6",
+      "blocks": [
+        {
+          "type": "title",
+          "text": "Layer 7 · Application",
+          "sub": "This is where you interact"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "label": "HTTP",
+              "value": "80 / 443",
+              "hint": "websites"
+            },
+            {
+              "label": "FTP",
+              "value": "21",
+              "hint": "files"
+            },
+            {
+              "label": "SMTP",
+              "value": "25",
+              "hint": "email"
+            },
+            {
+              "label": "DNS",
+              "value": "53",
+              "hint": "names"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "layer6-presentation",
+      "title": "Layer 6 · Presentation",
+      "narration": "Layer six, Presentation. This layer does three jobs. First, translate, making sure both sides speak the same data language. Second, encrypt, protecting data with S S L and T L S. And third, compress, shrinking files so they travel faster. Think J P E G, P N G, and M P four.",
+      "accent": "#3498DB",
+      "blocks": [
+        {
+          "type": "title",
+          "text": "Layer 6 · Presentation",
+          "sub": "Translate · Encrypt · Compress"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "label": "Translate",
+              "hint": "same data language"
+            },
+            {
+              "label": "Encrypt",
+              "hint": "SSL / TLS"
+            },
+            {
+              "label": "Compress",
+              "hint": "smaller = faster"
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "JPEG",
+            "PNG",
+            "MP4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "layer5-session",
+      "title": "Layer 5 · Session",
+      "narration": "Layer five, Session. It opens, manages, and closes conversations. Like a phone call. You dial, you talk, you hang up. It remembers who is talking to whom, and for how long, so data does not get lost between sessions.",
+      "accent": "#1ABC9C",
+      "blocks": [
+        {
+          "type": "title",
+          "text": "Layer 5 · Session",
+          "sub": "Like a phone call"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Dial",
+            "Talk",
+            "Hang up"
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Remembers who is talking to whom",
+            "And for how long"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "layer4-transport",
+      "title": "Layer 4 · Transport",
+      "narration": "Layer four, Transport. This is the workhorse layer. It takes data, slices it into segments, numbers each piece, and adds port numbers, so the receiver knows which app the data belongs to. Now, T C P is reliable. It handshakes, checks every packet, and retransmits lost ones. U D P is fast. It fires packets and does not check, perfect for video and gaming. This layer is the difference between just send it, and make sure it arrives.",
+      "accent": "#F1C40F",
+      "blocks": [
+        {
+          "type": "title",
+          "text": "Layer 4 · Transport",
+          "sub": "The workhorse layer"
+        },
+        {
+          "type": "compare",
+          "left": {
+            "title": "TCP",
+            "items": [
+              "Handshakes",
+              "Checks every packet",
+              "Retransmits losses"
+            ]
+          },
+          "right": {
+            "title": "UDP",
+            "items": [
+              "Fires and forgets",
+              "No checking",
+              "Perfect for video and gaming"
+            ]
+          }
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "label": "Segments",
+              "hint": "sliced + numbered"
+            },
+            {
+              "label": "Ports",
+              "hint": "which app gets it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "layer3-network",
+      "title": "Layer 3 · Network",
+      "narration": "Layer three, Network. This is where I P addresses live. Every packet gets a from and to address, like a postal envelope. Routers read those addresses and decide the best path, hop by hop, across cities, countries, and oceans. It is basically G P S for data.",
+      "accent": "#E67E22",
+      "blocks": [
+        {
+          "type": "title",
+          "text": "Layer 3 · Network",
+          "sub": "GPS for data"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "IP addresses: a from and a to, like an envelope",
+            "Routers pick the best path",
+            "Hop by hop, across oceans"
+          ]
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "label": "IPv4",
+              "value": "32-bit"
+            },
+            {
+              "label": "IPv6",
+              "value": "128-bit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "layer2-datalink",
+      "title": "Layer 2 · Data Link",
+      "narration": "Layer two, Data Link. It packages data into frames, and adds MAC addresses, the physical, hardware I D baked into every network card. Switches live here, moving frames within a local network. It also detects errors, so bad data never reaches the layers above.",
+      "accent": "#E74C3C",
+      "blocks": [
+        {
+          "type": "title",
+          "text": "Layer 2 · Data Link",
+          "sub": "Frames on the local wire"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "label": "Frames",
+              "hint": "the package"
+            },
+            {
+              "label": "MAC",
+              "hint": "hardware address"
+            },
+            {
+              "label": "CRC",
+              "hint": "error detection"
+            },
+            {
+              "label": "Switch",
+              "hint": "lives here"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "layer1-physical",
+      "title": "Layer 1 · Physical",
+      "narration": "Finally, layer one, Physical. Raw bits, sent through cables, fiber, or Wi Fi. Electrical pulses. Light beams. Radio waves. This is where ones and zeros meet the real world.",
+      "accent": "#95A5A6",
+      "blocks": [
+        {
+          "type": "title",
+          "text": "Layer 1 · Physical",
+          "sub": "Where ones and zeros meet the world"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Electrical pulses",
+            "Light beams in fiber",
+            "Radio waves over Wi-Fi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "encapsulation",
+      "title": "Encapsulation",
+      "narration": "Here is the magic. This is called encapsulation. As data travels down, each layer wraps it with its own header, like nesting dolls. By layer one, it is a fully packaged packet, ready to travel. On the receiving end, the process reverses. Each layer strips its own header off, going up, until the original data is revealed.",
+      "accent": "#4FD1FF",
+      "blocks": [
+        {
+          "type": "title",
+          "text": "Encapsulation",
+          "sub": "Nesting dolls, all the way down"
+        },
+        {
+          "type": "stack",
+          "highlight": 7,
+          "layers": [
+            {
+              "label": "Application data",
+              "color": "#9B59B6"
+            },
+            {
+              "label": "Presentation",
+              "color": "#3498DB"
+            },
+            {
+              "label": "Session",
+              "color": "#1ABC9C"
+            },
+            {
+              "label": "Segment + ports",
+              "color": "#F1C40F"
+            },
+            {
+              "label": "Packet + IP",
+              "color": "#E67E22"
+            },
+            {
+              "label": "Frame + MAC + CRC",
+              "color": "#E74C3C"
+            },
+            {
+              "label": "Bits on the wire",
+              "color": "#95A5A6"
+            }
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Down: each layer wraps it with its own header",
+            "Up: each layer strips its header off"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "mnemonic",
+      "title": "Mnemonic",
+      "narration": "Here is how to memorize it. Top to bottom: All People Seem To Need Data Processing. Bottom to top: Please Do Not Throw Sausage Pizza Away. Pick your favorite. You will never forget the layers again.",
+      "accent": "#4FD1FF",
+      "blocks": [
+        {
+          "type": "mnemonic",
+          "phrase": "All People Seem To Need Data Processing",
+          "expansion": [
+            "Application",
+            "Presentation",
+            "Session",
+            "Transport",
+            "Network",
+            "Data Link",
+            "Physical"
+          ]
+        },
+        {
+          "type": "mnemonic",
+          "phrase": "Please Do Not Throw Sausage Pizza Away",
+          "expansion": [
+            "Physical",
+            "Data Link",
+            "Network",
+            "Transport",
+            "Session",
+            "Presentation",
+            "Application"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "slug": "real-example",
+      "title": "Real World",
+      "narration": "Let us put it all together. You send a message. It drops through all seven layers on your device, crosses the internet, routers, cables, satellites, and climbs all seven layers back up on the receiving end. In under one hundred milliseconds.",
+      "accent": "#4FD1FF",
+      "blocks": [
+        {
+          "type": "title",
+          "text": "One message, end to end",
+          "sub": "Down seven, across the world, up seven"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Down 7 layers",
+            "Across the internet",
+            "Up 7 layers"
+          ]
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "label": "Under 100 ms",
+              "hint": "total round trip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "slug": "outro",
+      "title": "Outro",
+      "narration": "That is the OSI Model, the backbone of every network on Earth. Seven layers. One language. Now you know how data really travels. If this helped, subscribe for more tech explained simply. See you in the next one.",
+      "accent": "#4FD1FF",
+      "blocks": [
+        {
+          "type": "outro",
+          "text": "Seven layers. One language.",
+          "sub": "Now you know how data really travels."
+        },
+        {
+          "type": "mnemonic",
+          "phrase": "Never forget the layers again",
+          "expansion": [
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"
+          ]
+        }
+      ]
+    }
+  ]
+}

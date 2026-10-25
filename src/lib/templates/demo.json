@@ -1,0 +1,55 @@
+{
+  "name": "Block sampler",
+  "theme": { "name": "nebula" },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "gap": 0.45,
+  "voice": "",
+  "captions": { "enabled": true, "maxWords": 6, "maxSeconds": 3.2, "fontSize": 40 },
+  "scenes": [
+    {
+      "id": 1,
+      "slug": "scene-01",
+      "title": "Welcome",
+      "narration": "This sampler shows what the block library can draw. Every block animates itself in, and the caption in the corner tracks the voice.",
+      "accent": "#C77DFF",
+      "blocks": [
+        { "type": "title", "text": "The block library", "sub": "script in, video out" },
+        {
+          "type": "bullets",
+          "items": ["Write prose or YAML", "Preview instantly", "Export MP4 and SRT"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "scene-02",
+      "title": "Blocks",
+      "narration": "Titles, bullets, cards, stacks, steps, comparisons, code and mnemonics can all be mixed inside a single scene.",
+      "accent": "#4FD1FF",
+      "blocks": [
+        { "type": "cards", "heading": "block types", "items": [{ "label": "cards" }, { "label": "stack" }, { "label": "compare" }, { "label": "code" }, { "label": "mnemonic" }] },
+        { "type": "steps", "items": ["Write", "Preview", "Render"] }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "scene-03",
+      "title": "Code",
+      "narration": "Code blocks type themselves out on screen, which is handy for developer explainers.",
+      "accent": "#3DDC84",
+      "blocks": [
+        { "type": "code", "heading": "typed live", "language": "ts", "code": "const video = await render({\n  script: \"your words\",\n  voice: \"piper\",\n  captions: true,\n});" }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "scene-04",
+      "title": "Outro",
+      "narration": "That is the sampler. Make a project and replace this with your own script.",
+      "accent": "#C77DFF",
+      "blocks": [{ "type": "outro", "text": "Make it yours", "sub": "Replace the script and narrate" }]
+    }
+  ]
+}

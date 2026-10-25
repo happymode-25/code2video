@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.pwabuilder.www.twa",
+        "sha256_cert_fingerprints": ["00:56:9A:7C:49:95:B4:21:5F:6F:45:8F:B9:70:BD:3D:6E:D9:A7:68:20:14:D6:A9:AB:F2:FE:58:FF:3D:E9:EF"]
+      }
+    }]
